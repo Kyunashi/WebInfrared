@@ -1,0 +1,17 @@
+
+- raspi neu aufsetzen
+- harware mit raspi verbinden
+- IR frequenzen messen und speichern
+- Ferbedienungsfuntktionionen nachmachen fuer jede bedienung
+- webapp welches das senden ausloest und switch fuer geraete
+
+
+featueres
+- unified button that puts all 3 devices on / off
+
+-----------------------------------------------------------
+alternative:
+Android / I phone app
+-- getting frequency
+-- app to use remote ctrl funcitons
+-- easy switching / saving of remotes
