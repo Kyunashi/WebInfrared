@@ -1,2 +1,2 @@
 # WebInfrared
-IWI web interface to turn a raspi into a re
+web interface to turn a raspi into a remote control
