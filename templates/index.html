@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Remote Control</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-	<h1>Remote Control</h1>
-	<div>
-		<button class="button">Button 1</button>
-		<button class="button">Button 2</button>
-		<button class="button">Button 3</button>
-		<button class="button">Button 4</button>
-	</div>
-</body>
+	<head>
+		<title>Remote Control</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<h1 class="title">Remote Control</h1>
+		<div class="remote">
+			<form method="post">
+				<div class="button-row">
+					<button class="button" name="buttonId" value="1">1</button>
+					<button class="button" name="buttonId" value="2">2</button>
+					<button class="button" name="buttonId" value="3">3</button>
+				</div>
+				<div class="button-row">
+					<button class="button" name="buttonId" value="4">4</button>
+					<button class="button" name="buttonId" value="5">5</button>
+					<button class="button" name="buttonId" value="6">6</button>
+				</div>
+				<div class="button-row">
+					<button class="button" name="buttonId" value="7">7</button>
+					<button class="button" name="buttonId" value="8">8</button>
+					<button class="button" name="buttonId" value="9">9</button>
+				</div>
+				<div class="button-row">
+					<button class="button" name="buttonId" value="0">0</button>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>
