@@ -7,11 +7,12 @@ client = lirc.Client()
 
 
 
-def send(button_num):
-    if button_num == 1:
-        client.send_once("beamer", "KEY_POWER")
-
-
+#def sendIRSignal(button_num):
+  #  if button_num == 1:
+ #       try:
+#            client.send_once("beamer", "KEY_POWER")
+#            print("Beamer Power Key")
+        
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -19,7 +20,8 @@ def index():
         button_num = request.form['buttonId']
         print(f"Button {button_num} pressed!")
         print("Lirc Version: " + client.version())
-        send(button_num)
+        client.send_once("beamer", "KEY_POWER")
+        print("Beamer Power Key Clicked")
     return render_template('index.html')
 
 if __name__ == '__main__':
